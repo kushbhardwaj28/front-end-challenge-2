@@ -31,7 +31,7 @@ class SingleProduct extends Component{
                     <div className="col-md-8 p-0 bg-dark">
                         <div className="back-btn">
                             <Link to='/'>
-                            <i class="fa fa-arrow-left p-1" aria-hidden="true"></i>
+                            <i className="fa fa-arrow-left p-1" aria-hidden="true"></i>
                             </Link>
                         </div>
                         <img className='img-fluid product-page-img' 

@@ -35,7 +35,7 @@ class SearchBar extends Component {
                         className='form-control search-bar'
                         />
                         <span className='input-group-btn search-btn'>
-                        <button type='submit' className='btn btn-primary search-btn' ><i alt='search' class="fa fa-search fa-fw" aria-hidden="true" /></button>
+                        <button type='submit' className='btn btn-primary search-btn' ><i alt='search' className="fa fa-search fa-fw" aria-hidden="true" /></button>
                         </span>
                     </form>
                     <Cart />

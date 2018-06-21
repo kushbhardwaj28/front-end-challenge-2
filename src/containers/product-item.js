@@ -85,7 +85,7 @@ class ProductItem extends Component{
                     <div className="card-text">
                         
                     </div>
-                    <p className="card-text"><small className="text-muted"><p> Brand:{this.props.product.brand}</p></small></p>
+                    <div className="card-text"><small className="text-muted"><p> Brand:{this.props.product.brand}</p></small></div>
                 </div>
             </div>
         );

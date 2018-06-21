@@ -24,7 +24,7 @@ class Filter extends Component{
     renderCategories(){
         let arr = [];
         for(let i =0;i<this.props.Category.length;i++){
-            arr.push(<option value={this.props.Category[i]}>{this.props.Category[i]}</option>);
+            arr.push(<option key={this.props.Category[i]} value={this.props.Category[i]}>{this.props.Category[i]}</option>);
         }
         return(arr);
     }
@@ -32,7 +32,7 @@ class Filter extends Component{
     renderSizes(){
         let arr = [];
         for(let i =0;i<this.props.Sizes.length;i++){
-            arr.push(<option value={this.props.Sizes[i]}>{this.props.Sizes[i]}</option>);
+            arr.push(<option key={this.props.Sizes[i]} value={this.props.Sizes[i]}>{this.props.Sizes[i]}</option>);
         }
         return(arr);
     }

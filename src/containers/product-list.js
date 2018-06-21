@@ -82,7 +82,7 @@ class ProductList extends Component{
         this.productItems = this.createProduct(this.props.Products);
         let row=[];
         for(let j=0; j<this.productItems.length; j++){
-            row.push(<li className="col-sm-6 col-md-4 col-lg-3 product-item p-3">
+            row.push(<li key={this.productItems[j].key} className="col-sm-6 col-md-4 col-lg-3 product-item p-3">
                 {this.productItems[j]}
             </li>)
         }

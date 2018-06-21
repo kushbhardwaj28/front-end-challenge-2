@@ -51,9 +51,9 @@ class ProductPageDetails extends Component {
         let sizes = [];
         for(let size in this.props.product.sizes){
             if(size == this.props.selectedSize){
-                sizes.push(<button onClick={this.changeSize} value={size} type="button" class="btn btn-primary active">{size}</button>);
+                sizes.push(<button key={size} onClick={this.changeSize} value={size} type="button" className="btn btn-primary active">{size}</button>);
             } else{
-                sizes.push(<button onClick={this.changeSize} value={size} type="button" class="btn btn-primary">{size}</button>);
+                sizes.push(<button key={size} onClick={this.changeSize} value={size} type="button" className="btn btn-primary">{size}</button>);
             }
         }
         return sizes;
@@ -69,9 +69,9 @@ class ProductPageDetails extends Component {
         if(size != 'All'){
             this.props.product.sizes[size].sources.map((val)=>{
                 if(val.id == this.state.sizeSrc){
-                    loc.push(<button onClick={this.showDealer} value={val.id} type="button" class="btn btn-primary active">{val.city}, {val.state}</button>);
+                    loc.push(<button key={val.id} onClick={this.showDealer} value={val.id} type="button" className="btn btn-primary active">{val.city}, {val.state}</button>);
                 } else{
-                    loc.push(<button onClick={this.showDealer} value={val.id} type="button" class="btn btn-primary">{val.city}, {val.state}</button>);
+                    loc.push(<button key={val.id} onClick={this.showDealer} value={val.id} type="button" className="btn btn-primary">{val.city}, {val.state}</button>);
                 }
             });
         }
@@ -134,7 +134,7 @@ class ProductPageDetails extends Component {
     }
     successCart(){
         if(this.state.inCart){
-            return (<div class="alert alert-success m-0 p-2" role="alert">
+            return (<div className="alert alert-success m-0 p-2" role="alert">
                 Product Added to cart
                 </div>);
         } else{
@@ -189,12 +189,12 @@ class ProductPageDetails extends Component {
             </div>
             <hr />
             <div className="row mb-2">
-                <div class="btn-group m-auto" role="group" aria-label="Basic example">
+                <div className="btn-group m-auto" role="group" aria-label="Basic example">
                     {this.getSize()}
                 </div>
             </div>
             <div className="row">
-                <div class="btn-group-vertical m-auto" role="group" aria-label="Basic example">
+                <div className="btn-group-vertical m-auto" role="group" aria-label="Basic example">
                     {this.renderDealer(this.props.selectedSize)}
                 </div>
             </div>
