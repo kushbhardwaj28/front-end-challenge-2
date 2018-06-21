@@ -2,17 +2,31 @@ import React from "react";
 import ReactDOM from "react-dom";
 import { Provider } from 'react-redux';
 import { createStore, applyMiddleware } from 'redux';
-import { Switch } from 'react-router';
-import { BrowserRouter, Route, HashRouter } from 'react-router-dom';
+import { Route, HashRouter } from 'react-router-dom';
 
 import App from './components/app';
 import SingleProduct from './containers/singleProduct';
 import reducers from './reducers';
 
-const createStoreWithMiddleware = applyMiddleware()(createStore);
+import { loadState, saveState } from './localStorage/index';
+
+const persistentState = loadState();
+// const createStoreWithMiddleware = applyMiddleware()(createStore);
+
+const store = createStore(
+    reducers,
+    persistentState
+);
+
+store.subscribe(()=>{
+    saveState({
+        cartProducts:store.getState().cartProducts,
+        wlProducts:store.getState().wlProducts
+    });
+})
 
 ReactDOM.render(
-<Provider store={createStoreWithMiddleware(reducers)}>
+<Provider store={store}>
     <HashRouter >
         <div>
         <Route exact path='/' component={App} />
