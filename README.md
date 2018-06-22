@@ -30,10 +30,10 @@
 
 ### Project Images
 
-![Home](https://github.com/kushbhardwaj28/front-end-challenge-2/images/home.png)
-![Product](https://github.com/kushbhardwaj28/front-end-challenge-2/images/product.png)
-![Cart](https://github.com/kushbhardwaj28/front-end-challenge-2/images/cart.png)
-![WishList](https://github.com/kushbhardwaj28/front-end-challenge-2/images/wishlist.png)
+![Home](https://kushbhardwaj28.github.io/front-end-challenge-2/images/home.png)
+![Product](https://kushbhardwaj28.github.io/front-end-challenge-2/images/product.png)
+![Cart](https://kushbhardwaj28.github.io/front-end-challenge-2/images/cart.png)
+![WishList](https://kushbhardwaj28.github.io/front-end-challenge-2/images/wishlist.png)
 
 You can see live demo -> [Click Here](https://github.com/kushbhardwaj28/front-end-challenge-2/dist)
 
