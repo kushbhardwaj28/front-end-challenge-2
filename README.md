@@ -35,5 +35,5 @@
 ![Cart](https://kushbhardwaj28.github.io/front-end-challenge-2/images/cart.png)
 ![WishList](https://kushbhardwaj28.github.io/front-end-challenge-2/images/wishlist.png)
 
-You can see live demo -> [Click Here](https://github.com/kushbhardwaj28/front-end-challenge-2/dist)
+You can see live demo -> [Click Here](https://kushbhardwaj28.github.io/front-end-challenge-2/dist/#/)
 
