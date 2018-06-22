@@ -1,38 +1,39 @@
 # `ModeStreet front-end challenge` 
 
-This is our challenge for the front-end developer position at [@modestreet](https://github.com/amarofashion).
+## Project Prerequisite
 
-You're probably already participating in our hiring process, but if you stumble here by accident, read the document to the end and if you are interested, you can start the process from here.
+- Node.
+- Code Editor.
+- Terminal/Command Prompt (To run node commands).
 
-## About the challenge
+## Dependencies
 
-We'll give you some requirements that must be done and for which you'll be evaluated, but you're free to choose a solution method.
-
-What we expect to learn from you with this challenge:
-
-- Your work style.
-- How you think and solve problems.
-- How you communicate.
-
-What we expect that you learn from us:
-
-- How we work as a team.
-- Have a close look at some of the problems we face daily.
+- React (v^16.4.0)
+- React-dom (v^16.4.0)
+- react-redux (v^5.0.7)
+- react-router (v^4.3.1)
+- react-router-dom (v^4.3.1)
+- redux (v^4.0.0)
 
 ## Next steps
 
-1. Fork this repository to your personal account.
-2. Follow the instructions in the [`challenge`](/challenge.md) file.
-3. Solve the challenge in the best way you can.
-4. Send us a Pull Request with your solution.
+1. Clone the repository using git clone ( Repository link ).
+2. Navigate to the cloned directory.
+3. Run ` npm install`
+4. After that run ` npm start `
 
 ## Considerations
 
-- We won't limit your choice of tools or libraries. But make choices that suits your needs. There's no need to use a bazooka to kill an ant but the point of the challenge is to evaluate your skills.
-- Despite not having a time limit, we recommend that you don't spend more than **10 to 12 hours** working on this challenge.
-- Try to write the best code you possibly can. It will make our life easier when evaluating your solution. And remember: you'll have to explain it in person for us.
+- Filters are implemented.
+- Cart and WishList are consistent over refresh.
+- Cart and Wishlist add and remove options
 
-## Doubts?
+### Project Images
 
-Do you have in doubt related to the process? Open an [issue](https://github.com/ModeStreet/front-end-challenge-1/issues) and we'll be happy to help.
+![Home](https://github.com/kushbhardwaj28/front-end-challenge-2/images/home.png)
+![Product](https://github.com/kushbhardwaj28/front-end-challenge-2/images/product.png)
+![Cart](https://github.com/kushbhardwaj28/front-end-challenge-2/images/cart.png)
+![WishList](https://github.com/kushbhardwaj28/front-end-challenge-2/images/wishlist.png)
+
+You can see live demo -> [Click Here](https://github.com/kushbhardwaj28/front-end-challenge-2/dist)
 
