@@ -81,7 +81,7 @@ class Filter extends Component{
                 </div>
             <hr />
             <div>
-                <p>Price</p>
+                {/* <p>Price</p>
                 <div>
                     <input type='range'
                     value={this.props.Price}
@@ -93,7 +93,7 @@ class Filter extends Component{
                         max='100'
                         value={this.props.Price} className='price-filter-text' />
                 </div>
-                <hr />
+                <hr /> */}
                 <div className='input-group'>
                     <div className='input-group-prepend'>
                         <label className='input-group-text' htmlFor='inputGroupSelect01'>Size</label>

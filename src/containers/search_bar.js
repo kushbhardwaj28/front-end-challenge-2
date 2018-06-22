@@ -1,7 +1,8 @@
 import React,{ Component } from 'react';
 import { connect } from 'react-redux';
+import { Link } from 'react-router-dom';
 
-import Cart from './cartSearchBar';
+import CartSearchBar from './cartSearchBar';
 
 
 class SearchBar extends Component {
@@ -29,6 +30,9 @@ class SearchBar extends Component {
                         className='input-group col-9'
                         onSubmit={this.onFormSubmit}
                     >
+                        <Link to='/' className="btn btn-warning rounded-0">
+                            <i className="fa fa-home" aria-hidden="true"></i>
+                        </Link>
                         <input 
                         value={this.state.val}
                         onChange={this.onInputChange}
@@ -38,7 +42,7 @@ class SearchBar extends Component {
                         <button type='submit' className='btn btn-primary search-btn' ><i alt='search' className="fa fa-search fa-fw" aria-hidden="true" /></button>
                         </span>
                     </form>
-                    <Cart />
+                    <CartSearchBar />
                 </div>
             </nav>
         );

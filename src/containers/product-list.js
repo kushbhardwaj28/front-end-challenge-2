@@ -99,7 +99,6 @@ class ProductList extends Component{
 }
 
 function mapStateToProps(state){
-    console.log(state)
     return({ 
         Products: state.Products,
         selectedCategory: state.selectedCategory,

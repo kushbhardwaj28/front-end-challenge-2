@@ -85,3 +85,7 @@
 .wl-btn-disable{
     color: white;
 }
+
+.img-thumbnail{
+    width: 100px;
+}
